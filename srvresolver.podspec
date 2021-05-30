@@ -2,15 +2,16 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "srvresolver"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0"
   spec.summary      = "DNS SRV query resolver for objc/swift"
 
   spec.description  = <<-DESC
+  DNS service (SRV) records resolver.
                    DESC
 
   spec.homepage     = "https://github.com/alcheck/srvresolver"
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
 
   spec.author             = { "Alexey Chechetkin" => "alexey@talkme.im" }
 
@@ -19,11 +20,11 @@ Pod::Spec.new do |spec|
 
   #  When using multiple platforms
   spec.ios.deployment_target = "12.1"
-  spec.osx.deployment_target = "10.5"
+  spec.osx.deployment_target = "10.15"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-  spec.source       = { :git => "http://github.com/alcheck/srvresolver.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/alcheck/srvresolver.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "sources/**/*.{h,m}"
   
