@@ -1,0 +1,10 @@
+framework module srvresolver {
+  umbrella header "srvresolver.h"
+  
+  module * { export * }
+  export *
+  
+  module resolv_Private {
+    link "resolv"
+  }
+}
