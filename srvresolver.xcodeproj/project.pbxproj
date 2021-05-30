@@ -13,21 +13,17 @@
 		2C9420F026640660008527F2 /* SRVQueryResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9420EE26640660008527F2 /* SRVQueryResolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C9420F126640660008527F2 /* SRVQueryResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9420EF26640660008527F2 /* SRVQueryResolver.m */; };
 		2C942100266426C3008527F2 /* SRVQueryRecord+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9420F4266418A4008527F2 /* SRVQueryRecord+Private.h */; };
-		2C94210426642840008527F2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94210326642840008527F2 /* libresolv.tbd */; };
-		2CF11E0926643ED900D51D0B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9420C32663D00B008527F2 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C9420BF2663D00B008527F2 /* srvresolver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = srvresolver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9420C22663D00B008527F2 /* srvresolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srvresolver.h; sourceTree = "<group>"; };
-		2C9420C32663D00B008527F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C9420D82663D1A2008527F2 /* DNSQueryResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSQueryResolver.swift; sourceTree = "<group>"; };
 		2C9420EA2664056A008527F2 /* SRVQueryRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRVQueryRecord.h; sourceTree = "<group>"; };
 		2C9420EB2664056A008527F2 /* SRVQueryRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRVQueryRecord.m; sourceTree = "<group>"; };
 		2C9420EE26640660008527F2 /* SRVQueryResolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRVQueryResolver.h; sourceTree = "<group>"; };
 		2C9420EF26640660008527F2 /* SRVQueryResolver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRVQueryResolver.m; sourceTree = "<group>"; };
 		2C9420F4266418A4008527F2 /* SRVQueryRecord+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRVQueryRecord+Private.h"; sourceTree = "<group>"; };
-		2C94210326642840008527F2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		2CA61F7826642ED6000C25CD /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C94210426642840008527F2 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +43,6 @@
 			children = (
 				2C9420C12663D00B008527F2 /* sources */,
 				2C9420C02663D00B008527F2 /* Products */,
-				2C94210226642840008527F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +59,6 @@
 			children = (
 				2C9420D82663D1A2008527F2 /* DNSQueryResolver.swift */,
 				2C9420C22663D00B008527F2 /* srvresolver.h */,
-				2C9420C32663D00B008527F2 /* Info.plist */,
 				2C9420EA2664056A008527F2 /* SRVQueryRecord.h */,
 				2C9420F4266418A4008527F2 /* SRVQueryRecord+Private.h */,
 				2C9420EB2664056A008527F2 /* SRVQueryRecord.m */,
@@ -74,14 +67,6 @@
 				2CA61F7826642ED6000C25CD /* module.modulemap */,
 			);
 			path = sources;
-			sourceTree = "<group>";
-		};
-		2C94210226642840008527F2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2C94210326642840008527F2 /* libresolv.tbd */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +141,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF11E0926643ED900D51D0B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
