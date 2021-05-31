@@ -38,6 +38,7 @@ Pod::Spec.new do |spec|
   #spec.module_name = "srvresolver"
   #spec.preserve_path = "sources/module.modulemap"
   
+  spec.static_framework = true
   spec.library   = "resolv"
   # spec.libraries = "iconv", "xml2"
 
