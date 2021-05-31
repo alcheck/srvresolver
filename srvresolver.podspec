@@ -15,12 +15,12 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Alexey Chechetkin" => "alexey@talkme.im" }
 
-  spec.platform     = :ios
+  #spec.platform     = :ios
   #spec.platform     = :ios, "12.1"
 
   #  When using multiple platforms
   spec.ios.deployment_target = "12.1"
-  #spec.osx.deployment_target = "10.15"
+  spec.osx.deployment_target = "10.15"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
