@@ -303,7 +303,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = sources/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcheck.srvresolver;
-				PRODUCT_MODULE_NAME = "";
+				PRODUCT_MODULE_NAME = dnssrvresolver;
 				PRODUCT_NAME = srvresolver;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -336,7 +336,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MODULEMAP_FILE = sources/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcheck.srvresolver;
-				PRODUCT_MODULE_NAME = "";
+				PRODUCT_MODULE_NAME = dnssrvresolver;
 				PRODUCT_NAME = srvresolver;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
