@@ -2,9 +2,10 @@
 
 #### DNS SRV records query/resolve for objc/Swift
 
-<pre>
+```Swift
 
 // Swift example
+import srvresolver
 
 SRVQueryResolver.query("_sip._udp.sip1.voice.google.com", timeout: 2) { records, err in
     if let records = records {
@@ -14,5 +15,18 @@ SRVQueryResolver.query("_sip._udp.sip1.voice.google.com", timeout: 2) { records,
     }
 }
 
-</pre>
+```
+```Objective-C
 
+// Objective-C example
+
+@import srvresolver;
+
+[SRVQueryResolver query:@"_sip._udp.sip1.voice.google.com" timeout:2.0 completion:^(NSArray<SRVQueryRecord *> *records, NSError *err) {
+    if (records) {
+        NSLog(@"Found %ld records:\n%@", records.count, records);
+    } else if (err) {
+        NSLog(@"%@", err.localizedDescription);
+    }
+}];
+```
