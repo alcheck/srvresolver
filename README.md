@@ -2,6 +2,13 @@
 
 #### DNS SRV records query/resolve for objc/Swift
 
+Add to you podfile:
+```
+pod 'srvresolver'
+
+```
+
+Use:
 ```Swift
 
 // Swift example
