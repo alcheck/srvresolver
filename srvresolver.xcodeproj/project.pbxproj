@@ -13,6 +13,7 @@
 		2C9420F026640660008527F2 /* SRVQueryResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9420EE26640660008527F2 /* SRVQueryResolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C9420F126640660008527F2 /* SRVQueryResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9420EF26640660008527F2 /* SRVQueryResolver.m */; };
 		2C942100266426C3008527F2 /* SRVQueryRecord+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9420F4266418A4008527F2 /* SRVQueryRecord+Private.h */; };
+		F25B9AD62664EF6500532B77 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F25B9AD52664EF6500532B77 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C9420F4266418A4008527F2 /* SRVQueryRecord+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRVQueryRecord+Private.h"; sourceTree = "<group>"; };
 		2CA61F7826642ED6000C25CD /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		2CBE8B772664B79700D69B54 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25B9AD52664EF6500532B77 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			children = (
 				2C9420C12663D00B008527F2 /* sources */,
 				2C9420C02663D00B008527F2 /* Products */,
+				F25B9AD52664EF6500532B77 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25B9AD62664EF6500532B77 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
