@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "srvresolver"
-  spec.version      = "1.0"
+  spec.version      = "1.0.0"
   spec.summary      = "DNS SRV query resolver"
 
   spec.description  = <<-DESC
