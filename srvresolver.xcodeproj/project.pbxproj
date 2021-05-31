@@ -307,6 +307,7 @@
 				PRODUCT_NAME = srvresolver;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -337,6 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alcheck.srvresolver;
 				PRODUCT_MODULE_NAME = "";
 				PRODUCT_NAME = srvresolver;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
