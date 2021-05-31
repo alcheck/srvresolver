@@ -76,10 +76,6 @@
 
 - (void)dealloc {
     [self cleanup];
-    
-    #if DEBUG
-        NSLog(@"%s", __PRETTY_FUNCTION__);
-    #endif
 }
 
 - (void)finishWithErrorString:(nullable NSString *)errString {

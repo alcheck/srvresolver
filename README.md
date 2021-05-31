@@ -7,9 +7,11 @@
 // Swift example
 import srvresolver
 
-SRVQueryResolver.query("_sip._udp.sip1.voice.google.com", timeout: 2) { records, err in
+SRVQueryResolver.query("_xmpp-server._tcp.gmail.com", timeout: 2) { records, err in
     if let records = records {
-        print(records)
+        records.forEach { record in
+            print("\(record.target) : \(record.port), ttl: \(record.ttl), priority: \(record.priority)")
+        }
     } else if let err = err {
         print(err.localizedDescription)
     }
@@ -22,11 +24,25 @@ SRVQueryResolver.query("_sip._udp.sip1.voice.google.com", timeout: 2) { records,
 
 @import srvresolver;
 
-[SRVQueryResolver query:@"_sip._udp.sip1.voice.google.com" timeout:2.0 completion:^(NSArray<SRVQueryRecord *> *records, NSError *err) {
+[SRVQueryResolver query:@"_xmpp-server._tcp.gmail.com" timeout:2.0 completion:^(NSArray<SRVQueryRecord *> *records, NSError *err) {
     if (records) {
-        NSLog(@"Found %ld records:\n%@", records.count, records);
+        for(SRVQueryRecord *record in records) {
+            NSLog(@"%@ : %ld, ttl: %ld, priority: %ld", record.target, record.port, record.ttl, record.priority);
+        }
     } else if (err) {
         NSLog(@"%@", err.localizedDescription);
     }
 }];
+
+```
+
+```
+Output:
+
+alt1.xmpp-server.l.google.com : 5269, ttl: 1127, priority: 20
+alt3.xmpp-server.l.google.com : 5269, ttl: 1127, priority: 20
+alt4.xmpp-server.l.google.com : 5269, ttl: 1127, priority: 20
+alt2.xmpp-server.l.google.com : 5269, ttl: 1127, priority: 20
+xmpp-server.l.google.com : 5269, ttl: 1127, priority: 5
+
 ```
