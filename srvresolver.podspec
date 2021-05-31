@@ -3,10 +3,10 @@ Pod::Spec.new do |spec|
 
   spec.name         = "srvresolver"
   spec.version      = "1.0"
-  spec.summary      = "DNS SRV query resolver for objc/swift"
+  spec.summary      = "DNS SRV query resolver"
 
   spec.description  = <<-DESC
-  DNS service (SRV) records resolver.
+  The pod helps you to query DNS service for SRV records and get all the SRV records.
                    DESC
 
   spec.homepage     = "https://github.com/alcheck/srvresolver"
@@ -15,25 +15,31 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Alexey Chechetkin" => "alexey@talkme.im" }
 
-  #spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios
+  #spec.platform     = :ios, "12.1"
 
   #  When using multiple platforms
   spec.ios.deployment_target = "12.1"
-  spec.osx.deployment_target = "10.15"
+  #spec.osx.deployment_target = "10.15"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
   spec.source       = { :git => "https://github.com/alcheck/srvresolver.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "sources/**/*.{h,m}"
+  spec.private_header_files = "sources/*Private.h"
   
+  spec.exclude_files = ["sources/*.modulemap", "sources/srvresolver.h"]
+ 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
-  # spec.library   = "iconv"
+  #spec.module_map = "sources/module.modulemap"
+  #spec.module_name = "srvresolver"
+  #spec.preserve_path = "sources/module.modulemap"
+  
+  spec.library   = "resolv"
   # spec.libraries = "iconv", "xml2"
-
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
