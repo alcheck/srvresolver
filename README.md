@@ -1,14 +1,18 @@
 # SrvResolver
 
-#### DNS SRV records query/resolve for objc/Swift
+### DNS SRV records query/resolve for objc/Swift (iOS, MacOS)
 
-Add to you podfile:
+**Install using cocoapods:**
 ```
 pod 'srvresolver'
 
 ```
+**Manual installation:**
+```
+For manual installation just clone the repo and add the project as subproject (add dependancy to build phases).
+```
 
-Use:
+**Usage:**
 ```Swift
 
 // Swift example
